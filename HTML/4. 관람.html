@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>경기도 미술관 홈페이지</title>
+  <link rel="shortcut icon" type="image/x-icon" href="./IMAGE/파비콘.ico" />
+  <style>
+    ul {
+      list-style-type: none;
+      margin: 1;
+      padding: 0;
+      overflow: visible;
+      border: 10px solid #000000;
+      background-color: rgb(255, 255, 255);
+      position: sticky;
+      top: 0px;
+    }
+
+    li {
+      display: inline-block;
+      font-weight: bold;
+    }
+
+    li a,
+    .dropbtn {
+      display: inline-block;
+      padding: 30px 16px;
+      color: rgb(0, 0, 0);
+      text-align: center;
+      text-decoration: none;
+    }
+
+    li a:hover,
+    .dropdown:hover .dropbtn {
+      background-color: gray;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 90x;
+      box-shadow: 0px 8px 16px 0px gray;
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    footer {
+      position: relative;
+      padding: 29px 0;
+      border-top: 1px solid #ebebeb;
+      background-color: gray;
+    }
+
+    .clearfix:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    th,
+    td {
+      border: 1px solid black;
+      border-radius: 10px;
+      font-weight: bold;
+      padding: 15px;
+    }
+  </style>
+</head>
+
+<body>
+  <ul>
+    <li style="font-size:35px;"><a href="../index.html">메인</a></li>
+    <li class="dropdown">
+      <a href="#" class="dropdown" style="font-size: 35px;">소개</a>
+      <div class="dropdown-content">
+        <a href="./1.인사말 및 연혁.html">인사말 및 연혁</a>
+
+        <a href="./2.시설안내.html">시설안내</a>
+        <a href="./3. 오시는길.html">오시는길</a>
+    </li>
+    <li style="font-size: 35px;"><a href="./4. 관람.html">관람</a></li>
+    </div>
+    <li style="font-size:35px;"><a href="./5. 전시.html">전시</a></li>
+
+
+    <li class="dropdown">
+      <a href="#" class="dropdown" style="font-size: 35px;">SNS</a>
+      <div class="dropdown-content">
+        <a href="https://www.instagram.com/gyeonggimoma/" target="_blank">인스타그램</a>
+        <a href="https://www.facebook.com/ggmoma/" target="_blank">페이스북</a>
+      </div>
+    </li>
+    <a href="1. index.html">
+      <img src="../IMAGE/경기도 미술관 로고.png"
+        style="float: right; width:300px; height:80px; padding-top: 1%; padding-right: 2%;" alt="메인으로">
+    </a>
+  </ul>
+  <h1>관람 안내</h1>
+  <hr>
+  <table style="width:100%">
+    <tr>
+      <td>관람 시간</td>
+      <td>관람시간 화∼일요일 10:00-18:00<br>
+        *관람종료 1시간 전까지만 입장 가능합니다.<br>
+        *단계적 일상회복 1단계 적용에 따라 11월 2일(화)부터 사전예약 없이 현장관람이 가능합니다. </td>
+    </tr>
+    <tr>
+      <td>휴관일</td>
+      <td>
+        매주 월요일 (공휴일 제외)<br>
+        매년 1월 1일과 설날, 추석 당일</td>
+    </tr>
+    <tr>
+      <td>관람료</td>
+      <td>무료<br>
+        **일부 특별기획전 제외.</td>
+    </tr>
+    <tr>
+      <td>유의사항</td>
+      <td>전시작품이나 진열장에 손대지 마십시오.<br>
+        전시장 내에서는 음식물 및 음료수를 반입 할 수 없습니다.<br>
+        전시실 입장 시 A3 사이즈 이상의 가방 및 백팩은 반입이 불가합니다(1층 로비 안내데스크 옆 물품보관소에 보관 가능).<br>
+        사진 촬영은 가능하나 플래시 및 삼각대는 사용할 수 없으며, 동영상 촬영은 하실 수 없습니다.<br>
+        작품 보호 및 주차 관리를 위해 CCTV를 운영 중입니다.<br>
+        애완동물의 출입을 금지합니다.<br>
+        핸드폰은 진동 모드로 전환해 주십시오.<br>
+        어린이를 동반하는 경우, 어린이들이 전시장 내에서 뛰어다니거나, 큰 소리를 내거나, <br>
+        작품을 만지는 일이 없도록 올바른 관람 예절을 지도하여 주십시오.</td>
+    </tr>
+    <tr>
+      <td>주차</td>
+      <td>무료<br>
+        **화랑유원지 주차장 이용.</td>
+    </tr>
+    <tr>
+      <td>대여물품</td>
+      <td>유아, 노약자, 장애인에 한하여 유모차, 휠체어를 무료 대여하실 수 있습니다.<br>
+        방문 전 미리 연락 주시기 바랍니다.<br>
+
+        문의<br>
+        안내데스크 031-481-7000<br>
+
+        유모차 대여 대상<br>
+        30개월 이하(15kg 이하) 어린이</td>
+    </tr>
+  </table>
+
+
+<footer>
+  <p> 경기문화재단 경기도미술관 </p>
+  <p> (15385) 경기도 안산시 단원구 동산로 268 (초지동)</p>
+  <p>COPYRIGHT 2022. 경기도 미술관 ALL RIGHTS RESERVED.</p>
+  <address>https://gmoma.ggcf.kr/</address>
+
+</footer>
+</body>
+</html>
