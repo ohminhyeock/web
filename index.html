@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>경기도 미술관 홈페이지</title>
+  <link rel="shortcut icon" type="image/x-icon" href="./IMAGE/파비콘.ico" />
+  <style>
+    ul {
+      list-style-type: none;
+      margin: 1;
+      padding: 0;
+      overflow: visible;
+      border: 10px solid #000000;
+      background-color: rgb(255, 255, 255);
+      position: sticky;
+      top: 0px;
+      z-index: 1;
+    }
+
+    li {
+      display: inline-block;
+      font-weight: bold;
+
+    }
+
+    li a,
+    .dropbtn {
+      display: inline-block;
+      padding: 30px 16px;
+      color: rgb(0, 0, 0);
+      text-align: center;
+      text-decoration: none;
+    }
+
+    li a:hover,
+    .dropdown:hover .dropbtn {
+      background-color: gray;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 90x;
+      box-shadow: 0px 8px 16px 0px gray;
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    footer {
+      position: relative;
+      padding: 29px 0;
+      border-top: 1px solid #ebebeb;
+      background-color: gray;
+    }
+    
+    /*메인화면 사진*/
+    .container {
+      z-index: -1;
+    }
+    
+    /*메인화면 사진 속 텍스트*/
+    .topcenter {
+      position: absolute;
+      top: 300px;
+      width: 100%;
+      text-align: center;
+      font-size: 28px;
+      font-family: "Times New Roman", Times, serif;
+      font-weight: bold;
+      z-index: 0;
+    }
+    
+    /*이하 액자 효과*/
+    div.gallery {
+      border: 1px solid #ccc;
+    }
+
+    div.gallery:hover {
+      border: 1px solid #777;
+    }
+
+    div.gallery img {
+      width: 100%;
+      height: auto;
+    }
+
+    div.desc {
+      padding: 15px;
+      text-align: center;
+    }
+
+    /*전시품들 정렬 위함*/
+     *{
+      box-sizing: border-box;
+    }
+    
+    /*전시품들 크기 조절 기능*/
+    .responsive {
+      padding: 0 6px;
+      float: left;
+      width: 24.99999%;
+    }
+    
+    /*페이지와 바닥글이 겹치지 않게 하기 위함*/
+    .clearfix:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /*이하는 '더 감상하기' 링크를 꾸며줌*/
+    .more {
+      font-size: 50px;
+      color: rgb(150, 150, 150)
+    }
+    
+    .more:link {
+      color: gray;
+      background-color: transparent;
+      text-decoration: underline;
+    }
+
+    .more:visited {
+      color: darkgray;
+      background-color: transparent;
+      text-decoration: none;
+    }
+
+    .more:hover {
+      color: black;
+      background-color: transparent;
+      text-decoration: underline;
+    }
+
+    .more:active {
+      color: blue;
+      background-color: transparent;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <ul>
+    <li style="font-size:35px;"><a href="index.html">메인</a></li>
+    <li class="dropdown">
+      <a href="#" class="dropdown" style="font-size: 35px;">소개</a>
+      <div class="dropdown-content">
+        <a href="HTML\1.인사말 및 연혁.html">인사말 및 연혁</a>
+
+        <a href="HTML\2.시설안내.html">시설안내</a>
+        <a href="HTML\3. 오시는길.html">오시는길</a>
+    </li>
+    <li style="font-size: 35px;"><a href="HTML\4. 관람.html">관람</a></li>
+    </div>
+    <li style="font-size:35px;"><a href="HTML\5. 전시.html">전시</a></li>
+
+
+    <li class="dropdown">
+      <a href="#" class="dropdown" style="font-size: 35px;">SNS</a>
+      <div class="dropdown-content">
+        <a href="https://www.instagram.com/gyeonggimoma/" target="_blank">인스타그램</a>
+        <a href="https://www.facebook.com/ggmoma/" target="_blank">페이스북</a>
+      </div>
+    </li>
+    <a href="index.html">
+      <img src="./IMAGE/경기도 미술관 로고.png"
+        style="float: right; width:300px; height:80px; padding-top: 1%; padding-right: 2%;" alt="메인으로">
+    </a>
+  </ul>
+  <h1 style=text-align:center;>Welcome to 'Gyeonggi Art Gallery'.</h1>
+  <div style=text-align:center class="container">
+    <img src="./IMAGE/경기도미술관_전경사진-scaled-1.jpg" width="1000;" height="700;" alt="미술관 내부">
+    <div class="topcenter">경기도민을 위한 미술문화기관, <br> 경기도 미술관입니다.</div>
+  </div>
+  <hr>
+  <h1> Now on View</h1>
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="./IMAGE/전시품1.jpg">
+        <img src="./IMAGE/전시품1.jpg" alt="Cinque Terre" width="600" height="400">
+      </a>
+      <div class="desc"><cite>콜과 콜의 파란색 물건들</cite>, 2006, 윤정미</div>
+    </div>
+  </div>
+
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="./IMAGE/전시품2.jpg">
+        <img src="./IMAGE/전시품2.jpg" alt="Forest" width="600" height="400">
+      </a>
+      <div class="desc"><cite>남자의 길-불광동 첫사랑</cite>, 2007, 배영환</div>
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="./IMAGE/전시품3.jpg">
+        <img src="./IMAGE/전시품3.jpg" alt="Northern Lights" width="600" height="400">
+      </a>
+      <div class="desc"><cite>캐주얼 비주얼, 2006</cite>, 송영화</div>
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="./IMAGE/전시품4.jpg">
+        <img src="./IMAGE/전시품4.jpg" alt="Mountains" width="600" height="400">
+      </a>
+      <div class="desc"><cite>연인 또는 부부, 2006</cite>, 정재석</div>
+    </div>
+  </div>
+
+  <div class="clearfix"></div>
+
+  <br>
+  <p style=text-align:right;><a class="more" href="./HTML/5. 전시.html">더 감상하기</a></p>
+
+<footer>
+  <p> 경기문화재단 경기도미술관 </p>
+  <p> (15385) 경기도 안산시 단원구 동산로 268 (초지동)</p>
+  <p>COPYRIGHT 2022. 경기도 미술관 ALL RIGHTS RESERVED.</p>
+  <address>https://gmoma.ggcf.kr/</address>
+
+</footer>
+</body>
+</html>
