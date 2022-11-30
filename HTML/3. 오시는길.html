@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>경기도 미술관 홈페이지</title>
+  <link rel="shortcut icon" type="image/x-icon" href="./IMAGE/파비콘.ico" />
+  <style>
+    ul {
+      list-style-type: none;
+      margin: 1;
+      padding: 0;
+      overflow: visible;
+      border: 10px solid #000000;
+      background-color: rgb(255, 255, 255);
+      position: sticky;
+      top: 0px;
+    }
+
+    li {
+      display: inline-block;
+      /*border: 5px solid gray*/
+      font-weight: bold;
+    }
+
+    li a,
+    .dropbtn {
+      display: inline-block;
+      padding: 30px 16px;
+      color: rgb(0, 0, 0);
+      text-align: center;
+      text-decoration: none;
+    }
+
+    li a:hover,
+    .dropdown:hover .dropbtn {
+      background-color: gray;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 90x;
+      box-shadow: 0px 8px 16px 0px gray;
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    footer {
+      position: relative;
+      padding: 29px 0;
+      border-top: 1px solid #ebebeb;
+      background-color: gray;
+    }
+
+    .clearfix:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  </style>
+</head>
+
+<body>
+  <ul>
+    <li style="font-size:35px;"><a href="../index.html">메인</a></li>
+    <li class="dropdown">
+      <a href="#" class="dropdown" style="font-size: 35px;">소개</a>
+      <div class="dropdown-content">
+        <a href="./1.인사말 및 연혁.html">인사말 및 연혁</a>
+
+        <a href="./2.시설안내.html">시설안내</a>
+        <a href="./3. 오시는길.html">오시는길</a>
+    </li>
+    <li style="font-size: 35px;"><a href="./4. 관람.html">관람</a></li>
+    </div>
+    <li style="font-size:35px;"><a href="./5. 전시.html">전시</a></li>
+
+
+    <li class="dropdown">
+      <a href="#" class="dropdown" style="font-size: 35px;">SNS</a>
+      <div class="dropdown-content">
+        <a href="https://www.instagram.com/gyeonggimoma/" target="_blank">인스타그램</a>
+        <a href="https://www.facebook.com/ggmoma/" target="_blank">페이스북</a>
+      </div>
+    </li>
+    <a href="../index.html">
+      <img src="../IMAGE/경기도 미술관 로고.png"
+        style="float: right; width:300px; height:80px; padding-top: 1%; padding-right: 2%;" alt="메인으로">
+    </a>
+  </ul>
+  <h1>오시는길</h1>
+  <hr>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12690.840979102579!2d126.8138449!3d37.3256907!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbc1b7977ca6a4b02!2z6rK96riw64-E66-47Iig6rSA!5e0!3m2!1sko!2skr!4v1669634826743!5m2!1sko!2skr"
+    width="1600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+  <p>주소 : 경기문화재단 경기도미술관 경기도 안산시 단원구 동산로 268 (초지동)</p>
+  <p>도보 - 초지역에서 10분, 선부역에서 20분</p>
+  <p>자차 - 오이도에서 25분, 소래포구에서 30분
+  <p>청운대학교 인천캠퍼스에서 50분</p>
+  <p>버스 - 101, 123, 123-1, 9-1 </p>
+  <p>지하철 - 초지역(서해선, 4호선, 수인분당선)</p>
+  <hr>
+  <h2>안내영상</h2>
+  <iframe width="1600" height="500" src="https://www.youtube.com/embed/riH8Tu-yH4s" title="YouTube video player"
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>
+
+<footer>
+  <p> 경기문화재단 경기도미술관 </p>
+  <p> (15385) 경기도 안산시 단원구 동산로 268 (초지동)</p>
+  <p>COPYRIGHT 2022. 경기도 미술관 ALL RIGHTS RESERVED.</p>
+  <address>https://gmoma.ggcf.kr/</address>
+
+</footer>
+</body>
+</html>
